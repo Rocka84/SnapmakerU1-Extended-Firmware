@@ -1,0 +1,11 @@
+--- a/home/lava/klipper/klippy/extras/filament_detect.py
++++ b/home/lava/klipper/klippy/extras/filament_detect.py
+@@ -246,6 +246,8 @@
+                 filament_info['MULTI_MODE'] = int(params.pop('MULTI_MODE')) & 0xFF
+             if 'SKU' in params:
+                 filament_info['SKU'] = int(params.pop('SKU'))
++            if 'SPOOL_ID' in params:
++                filament_info['SPOOL_ID'] = int(params.pop('SPOOL_ID'))
+ 
+             if params:
+                 raise web_request.error("unsupported fields: %s" % (', '.join(sorted(params.keys()))))

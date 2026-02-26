@@ -9,6 +9,8 @@ settings:
     label: Snapmaker Components
   print_preferences:
     label: Print Preferences
+  spoolman:
+    label: Spoolman
   tweaks:
     label: Tweaks
   troubleshooting:
